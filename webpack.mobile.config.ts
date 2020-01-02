@@ -4,12 +4,11 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 import express from 'express'
 import ErrorOverlayPlugin from 'error-overlay-webpack-plugin'
 import CopyPlugin from 'copy-webpack-plugin'
-import TerserPlugin from 'terser-webpack-plugin'
 
 module.exports = (env, argv) => {
   const config = {
     entry: [
-      './src/desktop/index.tsx'
+      './src/mobile/index.tsx'
       // the entry point of our app
     ],
 
@@ -86,7 +85,7 @@ module.exports = (env, argv) => {
       port: 3000,
 
       historyApiFallback: {
-        index: '/app'
+        index: '/m'
       },
       // respond to 404s with index.html
 
@@ -95,18 +94,18 @@ module.exports = (env, argv) => {
 
       before: function(app, server) {
         app.use(
-          '/app/codemirror/mode',
+          '/m/codemirror/mode',
           express.static(path.join(__dirname, 'node_modules/codemirror/mode'))
         )
         app.use(
-          '/app/codemirror/addon',
+          '/m/codemirror/addon',
           express.static(path.join(__dirname, 'node_modules/codemirror/addon'))
         )
         app.use(
-          '/app/codemirror/theme',
+          '/m/codemirror/theme',
           express.static(path.join(__dirname, 'node_modules/codemirror/theme'))
         )
-        app.use('/app/static', express.static(path.join(__dirname, 'static')))
+        app.use('/m/static', express.static(path.join(__dirname, 'static')))
       }
     },
 
@@ -126,24 +125,17 @@ module.exports = (env, argv) => {
       'webpack-dev-server/client?http://localhost:3000',
       'webpack/hot/only-dev-server'
     )
-    ;(config.output as any).publicPath = 'http://localhost:3000/app'
+    ;(config.output as any).publicPath = 'http://localhost:3000/m'
   }
 
   if (argv.mode === 'production') {
     ;(config as any).optimization = {
-      minimize: true,
-      minimizer: [
-        new TerserPlugin({
-          terserOptions: {
-            keep_fnames: /Block|Value|Bool|BooleanLiteral|Null|NullLiteral|Literal|NumberLiteral|StringLiteral|RegexLiteral|Arr|Obj|Op|Parens/
-          }
-        })
-      ]
+      minimize: true
     }
   }
 
-  if (process.env.TARGET !== 'electron' && argv.mode !== 'development') {
-    ;(config.output as any).publicPath = '/app/'
+  if (argv.mode !== 'development') {
+    ;(config.output as any).publicPath = '/m/'
   }
 
   return config
