@@ -4,7 +4,7 @@ import { useSetState } from 'react-use'
 import { generalStatusKey } from '../../../common/consts'
 import { createStoreContext } from '../../../common/context'
 import { GeneralStatus } from './types'
-import { getFolderItemId } from '../nav'
+import { getFolderItemId } from '../../../common/nav'
 
 function loadGeneralStatus(): Partial<GeneralStatus> {
   const stringifiedGeneralStatus = localLiteStorage.getItem(generalStatusKey)
