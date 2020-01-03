@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react'
-import { useLogin, User, useUsers } from '../../lib/accounts'
+import { User } from '../../../common/users'
+import { useLogin, useUsers } from '../../lib/accounts'
 import { StyledComponent } from 'styled-components'
 
 type RenderFunction<T> = (state: T) => React.ReactNode

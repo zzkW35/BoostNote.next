@@ -1,4 +1,4 @@
-import { User } from '../accounts'
+import { User } from '../../../common/users'
 
 export type GeneralThemeOptions =
   | 'auto'

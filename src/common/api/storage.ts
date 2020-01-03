@@ -1,10 +1,5 @@
 import { apiPost, apiGet, apiDelete } from './utils'
-
-export interface CloudStorage {
-  id: number
-  name: string
-  size: number
-}
+import { CloudStorage } from '../users'
 
 interface User {
   token: string

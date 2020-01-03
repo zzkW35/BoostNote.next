@@ -1,5 +1,5 @@
 import React from 'react'
-import { User } from '../../lib/accounts/users'
+import { User } from '../../../common/users'
 import styled from '../../lib/styled'
 import MdiIcon from '@mdi/react'
 import { mdiAccount } from '@mdi/js'

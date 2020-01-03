@@ -30,7 +30,8 @@ import {
 } from './utils'
 import { FOLDER_ID_PREFIX, ATTACHMENTS_ID } from '../consts'
 import PouchDB from './PouchDB'
-import { buildCloudSyncUrl, User } from '../accounts'
+import { buildCloudSyncUrl } from '../accounts'
+import { User } from '../../../common/users'
 import { setHeader } from '../http'
 
 export default class NoteDb {

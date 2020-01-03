@@ -33,12 +33,12 @@ import { storageDataListKey, TAG_ID_PREFIX } from '../consts'
 import { difference } from 'ramda'
 import { escapeRegExp } from '../string'
 import {
-  User,
   createStorage as createCloudStorage,
   deleteStorage as deleteCloudStorage,
   renameStorage as renameCloudStorage,
   getStorages
 } from '../accounts'
+import { User } from '../../../common/users'
 import { wrapDbStoreWithAnalytics } from '../analytics'
 
 export interface DbStore {

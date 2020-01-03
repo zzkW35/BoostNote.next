@@ -1,25 +1,12 @@
 import { usePreferences } from '../preferences'
-import { CloudStorage } from '../../../common/api/storage'
-import { Subscription } from '../../../common/api/subscription'
+import { User } from '../../../common/users'
 
-export interface User {
-  token: string
-  name: string
-  id: number
-}
-
-export interface UserCloudInfo {
-  storages: CloudStorage[]
-  subscription: Subscription | undefined
-  usage: number
-}
-
-interface UserRepo {
+interface UserRepository {
   removeUser: (user: User) => void
   setUser: (user: User) => void
 }
 
-export const useUsers = (): [User[], UserRepo] => {
+export const useUsers = (): [User[], UserRepository] => {
   const { preferences, setPreferences } = usePreferences()
   const users = preferences['general.accounts']
 
@@ -29,7 +16,7 @@ export const useUsers = (): [User[], UserRepo] => {
     })
   }
 
-  const repo: UserRepo = {
+  const repo: UserRepository = {
     removeUser: user => setUsers(removeUser(user, users)),
     setUser: user => setUsers([user])
   }
