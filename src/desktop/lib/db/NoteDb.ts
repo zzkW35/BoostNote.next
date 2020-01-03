@@ -28,7 +28,7 @@ import {
   getTagName,
   values
 } from './utils'
-import { FOLDER_ID_PREFIX, ATTACHMENTS_ID } from '../consts'
+import { FOLDER_ID_PREFIX, ATTACHMENTS_ID } from '../../../common/consts'
 import PouchDB from './PouchDB'
 import { buildCloudSyncUrl } from '../accounts'
 import { User } from '../../../common/users'

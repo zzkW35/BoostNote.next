@@ -1,7 +1,7 @@
 import { useMemo, useCallback, useEffect } from 'react'
 import { localLiteStorage } from 'ltstrg'
 import { useSetState } from 'react-use'
-import { generalStatusKey } from '../consts'
+import { generalStatusKey } from '../../../common/consts'
 import { createStoreContext } from '../../../common/context'
 import { GeneralStatus } from './types'
 import { getFolderItemId } from '../nav'

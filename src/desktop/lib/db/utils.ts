@@ -1,4 +1,8 @@
-import { NOTE_ID_PREFIX, FOLDER_ID_PREFIX, TAG_ID_PREFIX } from '../consts'
+import {
+  NOTE_ID_PREFIX,
+  FOLDER_ID_PREFIX,
+  TAG_ID_PREFIX
+} from '../../../common/consts'
 import { join } from 'path'
 import { ObjectMap, NoteDoc, FolderDoc, TagDoc, NoteStorageData } from './types'
 import { generateId } from '../string'
