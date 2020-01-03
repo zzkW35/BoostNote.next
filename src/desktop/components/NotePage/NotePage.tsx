@@ -178,7 +178,7 @@ export default () => {
         }${note._id}`
       )
     }
-  }, [db, routeParams, storageId, setLastCreatedNoteId])
+  }, [db, routeParams, storageId, setLastCreatedNoteId, router])
 
   const showCreateNoteInList = routeParams.name === 'storages.notes'
 
@@ -236,7 +236,7 @@ export default () => {
         }
       })
     },
-    [messageBox, purgeNoteFromDb]
+    [messageBox, purgeNoteFromDb, t]
   )
 
   const navigateUp = useCallback(() => {
