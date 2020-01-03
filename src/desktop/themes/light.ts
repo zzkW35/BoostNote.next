@@ -1,8 +1,7 @@
-import { BaseTheme } from './types'
+import { BaseTheme } from './BaseTheme'
 
 const base1Color = '#ECECEC'
 const base2Color = '#F9F9F9'
-const base3Color = '#2c2d30'
 const primaryColor = '#03C588'
 
 const dark87Color = 'rgba(0,0,0,0.87)'
@@ -10,13 +9,9 @@ const dark54Color = 'rgba(0,0,0,0.54)'
 const dark26Color = 'rgba(0,0,0,0.26)'
 const dark12Color = 'rgba(0,0,0,0.12)'
 const dark100Color = '#000'
-
 const light100Color = '#FFF'
-const light70Color = 'rgba(255,255,255,0.7)'
-const light30Color = 'rgba(255,255,255,0.3)'
-const light12Color = 'rgba(255,255,255,0.12)'
 
-export const defaultTheme: BaseTheme = {
+export const lightTheme: BaseTheme = {
   colors: {
     text: dark87Color,
     deemedText: dark26Color,
@@ -37,8 +32,8 @@ export const defaultTheme: BaseTheme = {
 
   primaryColor: primaryColor,
   borderColor: dark12Color,
-  iconColor: light30Color,
-  activeIconColor: light70Color,
+  iconColor: dark26Color,
+  activeIconColor: dark54Color,
   noteListIconColor: dark26Color,
   noteListActiveIconColor: dark54Color,
   noteDetailIconColor: dark26Color,
@@ -47,17 +42,17 @@ export const defaultTheme: BaseTheme = {
   closeActiveIconColor: dark54Color,
   backgroundColor: base1Color,
   secondaryBackgroundColor: base2Color,
-  activeBackgroundColor: light12Color,
+  activeBackgroundColor: base2Color,
   shadow: '0 3px 5px rgba(0,0,0,0.1)',
 
   scrollBarTrackColor: base2Color,
   scrollBarThumbColor: dark12Color,
 
   // SideBar
-  sideBarBackgroundColor: base3Color,
-  activeSideBarSecondaryTextColor: light100Color,
-  sideBarTextColor: light70Color,
-  sideBarSecondaryTextColor: light30Color,
+  sideBarBackgroundColor: base1Color,
+  activeSideBarSecondaryTextColor: dark87Color,
+  sideBarTextColor: dark54Color,
+  sideBarSecondaryTextColor: dark26Color,
 
   // Button
   primaryButtonLabelColor: light100Color,

@@ -1,8 +1,8 @@
-import { BaseTheme } from './types'
+import { BaseTheme } from './BaseTheme'
 
-const base1Color = '#1d3f48'
-const base2Color = '#18353d'
-const primaryColor = '#36abe3'
+const base1Color = '#2c2d30'
+const base2Color = '#1e2022'
+const primaryColor = '#03C588'
 
 const dark26Color = 'rgba(0,0,0,0.26)'
 const light70Color = 'rgba(255,255,255,0.7)'
@@ -10,7 +10,7 @@ const light30Color = 'rgba(255,255,255,0.3)'
 const light12Color = 'rgba(255,255,255,0.12)'
 const light100Color = '#FFF'
 
-export const solarizedDarkTheme: BaseTheme = {
+export const darkTheme: BaseTheme = {
   colors: {
     text: light70Color,
     deemedText: light30Color,
