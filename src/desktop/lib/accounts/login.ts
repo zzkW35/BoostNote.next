@@ -8,7 +8,7 @@ import {
   getLoginPageUrl,
   LoginCompleteResponse,
   CheckLoginError
-} from './api/login'
+} from '../../../common/api/login'
 import { openNew } from '../platform'
 
 type LoginState = 'idle' | 'logging-in'

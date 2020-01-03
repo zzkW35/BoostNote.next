@@ -1,6 +1,6 @@
 import { usePreferences } from '../preferences'
-import { CloudStorage } from './api/storage'
-import { Subscription } from './api/subscription'
+import { CloudStorage } from '../../../common/api/storage'
+import { Subscription } from '../../../common/api/subscription'
 
 export interface User {
   token: string
