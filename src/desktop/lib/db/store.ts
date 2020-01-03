@@ -29,10 +29,10 @@ import { LiteStorage, localLiteStorage } from 'ltstrg'
 import { produce } from 'immer'
 import { useRouter, usePathnameWithoutNoteId } from '../router'
 import { values } from '../db/utils'
-import { storageDataListKey } from '../localStorageKeys'
-import { TAG_ID_PREFIX } from './consts'
+import { storageDataListKey } from '../consts'
+import { TAG_ID_PREFIX } from '../consts'
 import { difference } from 'ramda'
-import { escapeRegExp } from '../regex'
+import { escapeRegExp } from '../string'
 import {
   User,
   createStorage as createCloudStorage,

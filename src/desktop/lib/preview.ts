@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { localLiteStorage } from 'ltstrg'
-import { previewStyleKey } from './localStorageKeys'
+import { previewStyleKey } from './consts'
 import { createStoreContext } from './context'
 
 export const defaultPreviewStyle = `
