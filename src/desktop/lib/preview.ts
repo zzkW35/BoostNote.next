@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { localLiteStorage } from 'ltstrg'
 import { previewStyleKey } from './consts'
-import { createStoreContext } from './context'
+import { createStoreContext } from '../../common/context'
 
 export const defaultPreviewStyle = `
 -ms-text-size-adjust: 100%;

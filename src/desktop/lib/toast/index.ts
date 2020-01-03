@@ -1,4 +1,4 @@
-import { createStoreContext } from '../context'
+import { createStoreContext } from '../../../common/context'
 import { useState } from 'react'
 import { generateSecret } from '../string'
 

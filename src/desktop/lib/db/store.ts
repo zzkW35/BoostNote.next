@@ -10,7 +10,7 @@ import {
   PopulatedNoteDoc
 } from './types'
 import { useState, useCallback, useRef, useEffect } from 'react'
-import { createStoreContext } from '../context'
+import { createStoreContext } from '../../../common/context'
 import ow from 'ow'
 import { schema, isValid, optional } from '../predicates'
 import NoteDb from './NoteDb'

@@ -1,4 +1,4 @@
-import { createStoreContext } from '../context'
+import { createStoreContext } from '../../../common/context'
 import { useState, useCallback } from 'react'
 import { ModalsContentOptions, ModalsContext } from './types'
 export * from './types'
