@@ -1,5 +1,5 @@
 import React, { useMemo, useCallback } from 'react'
-import { useGlobalKeyDownHandler } from '../../lib/keyboard'
+import { useGlobalKeyDownHandler } from '../../lib/event'
 import { useModal } from '../../lib/modal/store'
 import {
   StyledModalsBackground,

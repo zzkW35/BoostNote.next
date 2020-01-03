@@ -1,6 +1,8 @@
-import { useEffect } from 'react'
+import { useEffect, ChangeEventHandler } from 'react'
 import { osName } from './platform'
 import isElectron from 'is-electron'
+
+export type SelectChangeEventHandler = ChangeEventHandler<HTMLSelectElement>
 
 export const useGlobalKeyDownHandler = (
   handler: (event: KeyboardEvent) => void

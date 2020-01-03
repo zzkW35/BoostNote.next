@@ -3,10 +3,7 @@ import { TutorialsNavigatorTreeItem } from '../../lib/tutorials'
 import TutorialsNoteItem from './TutorialsNoteItem'
 import { StyledNoteListContainer } from '../NotePage/NoteList/NoteList'
 import { useTranslation } from 'react-i18next'
-import {
-  isWithGeneralCtrlKey,
-  useGlobalKeyDownHandler
-} from '../../lib/keyboard'
+import { isWithGeneralCtrlKey, useGlobalKeyDownHandler } from '../../lib/event'
 
 type TutorialsNoteListProps = {
   currentTree: TutorialsNavigatorTreeItem

@@ -2,14 +2,17 @@ import React, { useState, useMemo } from 'react'
 import styled from '../../lib/styled'
 import { usePreferences } from '../../lib/preferences'
 import TabButton from './TabButton'
-import { useGlobalKeyDownHandler } from '../../lib/keyboard'
+import { useGlobalKeyDownHandler } from '../../lib/event'
 import GeneralTab from './GeneralTab'
 import EditorTab from './EditorTab'
 import MarkdownTab from './MarkdownTab'
 import AboutTab from './AboutTab'
 import BillingTab from './BillingTab'
 import ImportTab from './ImportTab'
-import { backgroundColor, closeIconColor } from '../../lib/styled/styleFunctions'
+import {
+  backgroundColor,
+  closeIconColor
+} from '../../lib/styled/styleFunctions'
 import { IconClose } from '../icons'
 import { useTranslation } from 'react-i18next'
 

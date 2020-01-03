@@ -19,10 +19,7 @@ import { useGeneralStatus, ViewModeType } from '../../lib/generalStatus'
 import { useDialog, DialogIconTypes } from '../../lib/dialog'
 import { escapeRegExp } from '../../lib/string'
 import { useTranslation } from 'react-i18next'
-import {
-  useGlobalKeyDownHandler,
-  isWithGeneralCtrlKey
-} from '../../lib/keyboard'
+import { useGlobalKeyDownHandler, isWithGeneralCtrlKey } from '../../lib/event'
 
 export const StyledNoteDetailNoNote = styled.div`
   text-align: center;

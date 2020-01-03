@@ -14,7 +14,7 @@ import { useTranslation } from 'react-i18next'
 import {
   useGlobalKeyDownHandler,
   isWithGeneralCtrlKey
-} from '../../../lib/keyboard'
+} from '../../../lib/event'
 import { NoteListSortOptions } from '../NotePage'
 
 export const StyledNoteListContainer = styled.div`

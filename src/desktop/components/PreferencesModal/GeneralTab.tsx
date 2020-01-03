@@ -14,7 +14,7 @@ import {
   GeneralTutorialsOptions
 } from '../../lib/preferences'
 import { useTranslation } from 'react-i18next'
-import { SelectChangeEventHandler } from '../../lib/events'
+import { SelectChangeEventHandler } from '../../lib/event'
 import { useUsers } from '../../lib/accounts'
 import UserInfo from './UserInfo'
 import LoginButton from '../atoms/LoginButton'

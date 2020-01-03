@@ -19,7 +19,7 @@ import {
   EditorIndentSizeOptions,
   EditorKeyMapOptions
 } from '../../lib/preferences'
-import { SelectChangeEventHandler } from '../../lib/events'
+import { SelectChangeEventHandler } from '../../lib/event'
 import { themes } from '../../lib/CodeMirror'
 import { capitalize } from '../../lib/string'
 import CustomizedCodeEditor from '../atoms/CustomizedCodeEditor'
