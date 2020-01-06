@@ -5,7 +5,7 @@ import {
 } from '../../../common/consts'
 import { join } from 'path'
 import { ObjectMap, NoteDoc, FolderDoc, TagDoc, NoteStorageData } from './types'
-import { generateId } from '../string'
+import { generateId } from '../../../common/string'
 
 export function values<T>(objectMap: ObjectMap<T>): T[] {
   return Object.values(objectMap) as T[]

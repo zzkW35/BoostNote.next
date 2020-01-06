@@ -21,7 +21,7 @@ import {
 } from '../../lib/preferences'
 import { SelectChangeEventHandler } from '../../lib/event'
 import { themes } from '../../lib/CodeMirror'
-import { capitalize } from '../../lib/string'
+import { capitalize } from '../../../common/string'
 import CustomizedCodeEditor from '../atoms/CustomizedCodeEditor'
 import { useDebounce } from 'react-use'
 import { useAnalytics, analyticsEvents } from '../../lib/analytics'

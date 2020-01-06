@@ -1,6 +1,6 @@
 import { createStoreContext } from '../../../common/context'
 import { useState } from 'react'
-import { generateSecret } from '../string'
+import { generateSecret } from '../../../common/string'
 
 export interface ToastMessage {
   id: string

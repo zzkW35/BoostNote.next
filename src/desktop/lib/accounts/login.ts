@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { retry } from '../sleep'
-import { generateSecret } from '../string'
+import { retry } from '../../../common/sleep'
+import { generateSecret } from '../../../common/string'
 import {
   checkLogin,
   isLoginComplete,

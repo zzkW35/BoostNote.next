@@ -17,7 +17,7 @@ import TwoPaneLayout from '../atoms/TwoPaneLayout'
 import { PopulatedNoteDoc, NoteStorage, ObjectMap } from '../../lib/db/types'
 import { useGeneralStatus, ViewModeType } from '../../lib/generalStatus'
 import { useDialog, DialogIconTypes } from '../../lib/dialog'
-import { escapeRegExp } from '../../lib/string'
+import { escapeRegExp } from '../../../common/string'
 import { useTranslation } from 'react-i18next'
 import { useGlobalKeyDownHandler, isWithGeneralCtrlKey } from '../../lib/event'
 

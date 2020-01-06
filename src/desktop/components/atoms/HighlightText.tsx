@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 import styled from '../../lib/styled'
-import { escapeRegExp } from '../../lib/string'
+import { escapeRegExp } from '../../../common/string'
 
 const HighlightContainer = styled.span`
   .highlighted {

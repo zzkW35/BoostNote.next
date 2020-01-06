@@ -23,7 +23,7 @@ import {
   isCloudStorageData,
   entries
 } from './utils'
-import { generateId } from '../string'
+import { generateId } from '../../../common/string'
 import PouchDB from './PouchDB'
 import { LiteStorage, localLiteStorage } from 'ltstrg'
 import { produce } from 'immer'
@@ -31,7 +31,7 @@ import { useRouter, usePathnameWithoutNoteId } from '../router'
 import { values } from '../db/utils'
 import { storageDataListKey, TAG_ID_PREFIX } from '../../../common/consts'
 import { difference } from 'ramda'
-import { escapeRegExp } from '../string'
+import { escapeRegExp } from '../../../common/string'
 import {
   createStorage as createCloudStorage,
   deleteStorage as deleteCloudStorage,
