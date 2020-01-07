@@ -600,7 +600,7 @@ describe('DbStore', () => {
         // Then
         expect(
           result.current.storageMap[storage!.id]!.folderMap[
-          noteDoc!.folderPathname
+            noteDoc!.folderPathname
           ]
         ).toBeDefined()
       })
