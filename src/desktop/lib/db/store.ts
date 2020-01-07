@@ -12,7 +12,7 @@ import {
 import { useState, useCallback, useRef, useEffect } from 'react'
 import { createStoreContext } from '../../../common/context'
 import ow from 'ow'
-import { schema, isValid, optional } from '../predicates'
+import { schema, isValid, optional } from '../../../common/predicates'
 import NoteDb from '../../../common/db/NoteDb'
 import {
   getFolderPathname,
