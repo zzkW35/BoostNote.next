@@ -1,13 +1,13 @@
-import NoteDb from '../../../common/db/NoteDb'
-import PouchDB from '../../../common/db/PouchDB'
+import NoteDb from './NoteDb'
+import PouchDB from './PouchDB'
 import {
   getFolderId,
   getTagId,
   generateNoteId,
   getNow,
   sortByTitle
-} from '../../../common/db/utils'
-import { NoteDoc, FolderDoc, ExceptRev } from '../../../common/db/types'
+} from './utils'
+import { NoteDoc, FolderDoc, ExceptRev } from './types'
 
 let noteDbCount = 0
 async function prepareNoteDb(shouldInit = true): Promise<NoteDb> {

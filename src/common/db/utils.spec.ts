@@ -7,7 +7,7 @@ import {
   getTagName,
   isTagNameValid,
   getAllParentFolderPathnames
-} from '../../../common/db/utils'
+} from './utils'
 
 describe('getFolderId', () => {
   it('returns folder id from pathname', () => {
