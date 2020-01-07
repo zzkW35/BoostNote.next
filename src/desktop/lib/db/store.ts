@@ -8,12 +8,12 @@ import {
   PopulatedTagDoc,
   Attachment,
   PopulatedNoteDoc
-} from './types'
+} from '../../../common/db/types'
 import { useState, useCallback, useRef, useEffect } from 'react'
 import { createStoreContext } from '../../../common/context'
 import ow from 'ow'
 import { schema, isValid, optional } from '../predicates'
-import NoteDb from './NoteDb'
+import NoteDb from '../../../common/db/NoteDb'
 import {
   getFolderPathname,
   getParentFolderPathname,
@@ -22,13 +22,13 @@ import {
   createUnprocessableEntityError,
   isCloudStorageData,
   entries
-} from './utils'
+} from '../../../common/db/utils'
 import { generateId } from '../../../common/string'
-import PouchDB from './PouchDB'
+import PouchDB from '../../../common/db/PouchDB'
 import { LiteStorage, localLiteStorage } from 'ltstrg'
 import { produce } from 'immer'
 import { useRouter, usePathnameWithoutNoteId } from '../router'
-import { values } from '../db/utils'
+import { values } from '../../../common/db/utils'
 import { storageDataListKey, TAG_ID_PREFIX } from '../../../common/consts'
 import { difference } from 'ramda'
 import { escapeRegExp } from '../../../common/string'

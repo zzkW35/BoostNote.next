@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 import SideNavigatorItem from './SideNavigatorItem'
-import { NoteStorage } from '../../lib/db/types'
+import { NoteStorage } from '../../../common/db/types'
 import { useGeneralStatus } from '../../lib/generalStatus'
 import { getTagListItemId } from '../../../common/nav'
 import { useRouter, usePathnameWithoutNoteId } from '../../lib/router'

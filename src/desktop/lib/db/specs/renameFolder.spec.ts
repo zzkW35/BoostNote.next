@@ -1,9 +1,9 @@
 import { createDbStoreCreator } from '../store'
 import { MemoryLiteStorage } from 'ltstrg'
 import { renderHook, act } from '@testing-library/react-hooks'
-import { NoteStorage, NoteDoc } from '../types'
+import { NoteStorage, NoteDoc } from '../../../../common/db/types'
 import { RouterProvider } from '../../router'
-import { getFolderId } from '../utils'
+import { getFolderId } from '../../../../common/db/utils'
 
 function prepareDbStore() {
   const memoryStorage = new MemoryLiteStorage()

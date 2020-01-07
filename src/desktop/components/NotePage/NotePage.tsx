@@ -14,7 +14,7 @@ import {
 } from '../../lib/router'
 import { useDb } from '../../lib/db'
 import TwoPaneLayout from '../atoms/TwoPaneLayout'
-import { PopulatedNoteDoc, NoteStorage, ObjectMap } from '../../lib/db/types'
+import { PopulatedNoteDoc, NoteStorage, ObjectMap } from '../../../common/db/types'
 import { useGeneralStatus, ViewModeType } from '../../lib/generalStatus'
 import { useDialog, DialogIconTypes } from '../../lib/dialog'
 import { escapeRegExp } from '../../../common/string'

@@ -6,11 +6,11 @@ import {
   DeleteStorageButton
 } from '../PreferencesModal/styled'
 import { useDb } from '../../lib/db'
-import { NoteStorage } from '../../lib/db/types'
+import { NoteStorage } from '../../../common/db/types'
 import { useRouter } from '../../lib/router'
 import { useDebounce } from 'react-use'
 import { useDialog, DialogIconTypes } from '../../lib/dialog'
-import { isCloudStorageData } from '../../lib/db/utils'
+import { isCloudStorageData } from '../../../common/db/utils'
 import { useToast } from '../../lib/toast'
 import { useTranslation } from 'react-i18next'
 

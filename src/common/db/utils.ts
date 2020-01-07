@@ -1,11 +1,7 @@
-import {
-  NOTE_ID_PREFIX,
-  FOLDER_ID_PREFIX,
-  TAG_ID_PREFIX
-} from '../../../common/consts'
+import { NOTE_ID_PREFIX, FOLDER_ID_PREFIX, TAG_ID_PREFIX } from '../consts'
 import { join } from 'path'
 import { ObjectMap, NoteDoc, FolderDoc, TagDoc, NoteStorageData } from './types'
-import { generateId } from '../../../common/string'
+import { generateId } from '../string'
 
 export function values<T>(objectMap: ObjectMap<T>): T[] {
   return Object.values(objectMap) as T[]

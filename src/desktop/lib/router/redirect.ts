@@ -1,7 +1,7 @@
 import { useDb } from '../db'
 import { useRouter } from './store'
 import { useEffect, useRef } from 'react'
-import { entries } from '../db/utils'
+import { entries } from '../../../common/db/utils'
 import { useModal } from '../modal'
 import { usePreferences } from '../preferences'
 

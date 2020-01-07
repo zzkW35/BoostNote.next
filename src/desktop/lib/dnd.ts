@@ -1,4 +1,4 @@
-import { NoteDoc } from './db/types'
+import { NoteDoc } from '../../common/db/types'
 
 const noteFormat = 'application/x-boost-note-json'
 

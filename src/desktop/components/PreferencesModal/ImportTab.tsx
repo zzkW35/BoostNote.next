@@ -8,7 +8,7 @@ import {
   SectionHeader2
 } from './styled'
 import { useDb } from '../../lib/db'
-import { entries } from '../../lib/db/utils'
+import { entries } from '../../../common/db/utils'
 import FileDropZone from '../atoms/FileDropZone'
 import {
   convertCSONFileToNote,

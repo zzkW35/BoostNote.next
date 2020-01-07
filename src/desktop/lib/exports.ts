@@ -10,7 +10,7 @@ import { mergeDeepRight } from 'ramda'
 import gh from 'hast-util-sanitize/lib/github.json'
 import { rehypeCodeMirror } from './../components/atoms/MarkdownPreviewer'
 import { downloadString } from './download'
-import { NoteDoc } from './db/types'
+import { NoteDoc } from '../../common/db/types'
 import { Preferences } from './preferences'
 
 const sanitizeSchema = mergeDeepRight(gh, {

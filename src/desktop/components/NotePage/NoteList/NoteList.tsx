@@ -1,6 +1,6 @@
 import React, { useCallback, useRef, ChangeEventHandler } from 'react'
 import NoteItem from './NoteItem'
-import { PopulatedNoteDoc } from '../../../lib/db/types'
+import { PopulatedNoteDoc } from '../../../../common/db/types'
 import styled from '../../../lib/styled'
 import {
   borderBottom,

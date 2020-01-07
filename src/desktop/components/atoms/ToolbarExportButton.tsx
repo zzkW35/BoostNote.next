@@ -2,7 +2,7 @@ import React, { useCallback } from 'react'
 import styled from '../../lib/styled'
 import { noteListIconColor } from '../../lib/styled/styleFunctions'
 import { useContextMenu, MenuTypes } from '../../lib/contextMenu'
-import { NoteDoc } from '../../lib/db/types'
+import { NoteDoc } from '../../../common/db/types'
 import {
   exportNoteAsHtmlFile,
   exportNoteAsMarkdownFile

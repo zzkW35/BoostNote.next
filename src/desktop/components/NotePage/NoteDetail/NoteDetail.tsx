@@ -4,8 +4,8 @@ import {
   NoteDocEditibleProps,
   Attachment,
   PopulatedNoteDoc
-} from '../../../lib/db/types'
-import { isTagNameValid } from '../../../lib/db/utils'
+} from '../../../../common/db/types'
+import { isTagNameValid } from '../../../../common/db/utils'
 import TagList from './TagList'
 import styled from '../../../lib/styled'
 import CustomizedCodeEditor from '../../atoms/CustomizedCodeEditor'
