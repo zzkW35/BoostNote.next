@@ -8,7 +8,7 @@ import {
 } from './styled'
 import { usePreferences } from '../../lib/preferences'
 import DownloadOurAppModal from './contents/DownloadOurAppModal'
-import { IconArrowSingleRight } from '../icons'
+import { IconArrowSingleRight } from '../../../common/icons'
 
 interface ModalsRenderingOptions {
   closable: boolean

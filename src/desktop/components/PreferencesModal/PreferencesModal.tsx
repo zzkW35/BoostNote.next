@@ -13,7 +13,7 @@ import {
   backgroundColor,
   closeIconColor
 } from '../../lib/styled/styleFunctions'
-import { IconClose } from '../icons'
+import { IconClose } from '../../../common/icons'
 import { useTranslation } from 'react-i18next'
 
 const Container = styled.div`

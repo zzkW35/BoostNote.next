@@ -6,7 +6,7 @@ import { useGeneralStatus } from '../../lib/generalStatus'
 import { useContextMenu, MenuTypes } from '../../lib/contextMenu'
 import { useDialog, DialogIconTypes } from '../../lib/dialog'
 import { usePreferences } from '../../lib/preferences'
-import { IconFile, IconFileOpen, IconHelpOutline } from '../icons'
+import { IconFile, IconFileOpen, IconHelpOutline } from '../../../common/icons'
 
 interface NavigatorNode {
   id: string

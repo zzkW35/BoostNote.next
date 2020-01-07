@@ -30,7 +30,7 @@ import {
   IconSetting,
   IconBook,
   IconStarActive
-} from '../icons'
+} from '../../../common/icons'
 
 const Description = styled.nav`
   margin-left: 15px;

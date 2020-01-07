@@ -9,7 +9,11 @@ import {
   noteListIconColor,
   selectTabStyle
 } from '../../../lib/styled/styleFunctions'
-import { IconEdit, IconLoupe, IconArrowSingleDown } from '../../icons'
+import {
+  IconEdit,
+  IconLoupe,
+  IconArrowSingleDown
+} from '../../../../common/icons'
 import { useTranslation } from 'react-i18next'
 import {
   useGlobalKeyDownHandler,

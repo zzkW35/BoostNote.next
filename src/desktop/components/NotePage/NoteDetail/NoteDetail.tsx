@@ -32,7 +32,7 @@ import {
   IconPreview,
   IconSplitView,
   IconEditView
-} from '../../icons'
+} from '../../../../common/icons'
 
 export const StyledNoteDetailContainer = styled.div`
   ${secondaryBackgroundColor}

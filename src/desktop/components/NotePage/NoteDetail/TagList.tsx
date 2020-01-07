@@ -6,7 +6,7 @@ import {
   noteListIconColor,
   inputStyle
 } from '../../../lib/styled/styleFunctions'
-import { IconTag, IconClose } from '../../icons'
+import { IconTag, IconClose } from '../../../../common/icons'
 
 interface TagListItemProps {
   tagName: string

@@ -7,7 +7,7 @@ import { useRouter, usePathnameWithoutNoteId } from '../../lib/router'
 import { useContextMenu, MenuTypes } from '../../lib/contextMenu'
 import { useDialog, DialogIconTypes } from '../../lib/dialog'
 import { useDb } from '../../lib/db'
-import { IconTag, IconTags, IconTagFill } from '../icons'
+import { IconTag, IconTags, IconTagFill } from '../../../common/icons'
 import { useTranslation } from 'react-i18next'
 
 interface TagListFragmentProps {

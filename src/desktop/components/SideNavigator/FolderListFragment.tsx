@@ -9,7 +9,7 @@ import { useGeneralStatus } from '../../lib/generalStatus'
 import ControlButton from './ControlButton'
 import { getFolderItemId } from '../../../common/nav'
 import { getTransferrableNoteData } from '../../lib/dnd'
-import { IconAddRound, IconFile, IconFileOpen } from '../icons'
+import { IconAddRound, IconFile, IconFileOpen } from '../../../common/icons'
 import { useTranslation } from 'react-i18next'
 
 interface FolderListFragmentProps {

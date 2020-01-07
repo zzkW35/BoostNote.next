@@ -7,7 +7,7 @@ import ToolbarSeparator from '../atoms/ToolbarSeparator'
 import { TutorialsNavigatorTreeItem } from '../../lib/tutorials'
 import { StyledNoteDetailContainer } from '../NotePage/NoteDetail/NoteDetail'
 import { ViewModeType } from '../../lib/generalStatus'
-import { IconEye, IconSplit, IconEdit } from '../icons'
+import { IconEye, IconSplit, IconEdit } from '../../../common/icons'
 
 type TutorialsNoteDetailProps = {
   note: TutorialsNavigatorTreeItem

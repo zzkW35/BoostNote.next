@@ -9,7 +9,7 @@ import {
 } from '../../lib/exports'
 import { usePreferences } from '../../lib/preferences'
 import { usePreviewStyle } from '../../lib/preview'
-import { IconInfo } from '../icons'
+import { IconInfo } from '../../../common/icons'
 
 const StyledButton = styled.button<{ active: boolean }>`
   background: transparent;

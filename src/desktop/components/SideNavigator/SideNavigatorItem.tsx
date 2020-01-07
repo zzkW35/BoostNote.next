@@ -7,7 +7,10 @@ import {
   activeBackgroundColor,
   iconColor
 } from '../../lib/styled/styleFunctions'
-import { IconArrowSingleRight, IconArrowSingleDown } from '../icons'
+import {
+  IconArrowSingleRight,
+  IconArrowSingleDown
+} from '../../../common/icons'
 
 const Container = styled.div`
   position: relative;

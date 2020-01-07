@@ -19,7 +19,7 @@ import { useUsers } from '../../lib/accounts'
 import UserInfo from './UserInfo'
 import LoginButton from '../atoms/LoginButton'
 import { useAnalytics, analyticsEvents } from '../../lib/analytics'
-import { IconArrowRotate } from '../icons'
+import { IconArrowRotate } from '../../../common/icons'
 
 const GeneralTab = () => {
   const { preferences, setPreferences } = usePreferences()
