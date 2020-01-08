@@ -3,7 +3,7 @@ import { useRouter, usePathnameWithoutNoteId } from '../../lib/router'
 import { useDb } from '../../lib/db'
 import { entries } from '../../../common/db/utils'
 import styled from '../../lib/styled'
-import { useDialog, DialogIconTypes } from '../../lib/dialog'
+import { useDialog, DialogIconTypes } from '../../../common/dialog'
 import { useContextMenu, MenuTypes } from '../../lib/contextMenu'
 import { usePreferences } from '../../lib/preferences'
 import {

@@ -6,7 +6,7 @@ import {
   MessageBoxDialogOptions,
   DialogContext
 } from './types'
-import { createStoreContext } from '../../../common/context'
+import { createStoreContext } from '../context'
 export * from './types'
 
 let id = 0

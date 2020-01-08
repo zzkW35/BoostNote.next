@@ -3,7 +3,7 @@ import styled from '../../lib/styled'
 import { NoteStorage, Attachment } from '../../../common/db/types'
 import { useContextMenu, MenuTypes } from '../../lib/contextMenu'
 import { downloadBlob } from '../../lib/download'
-import { useDialog, DialogIconTypes } from '../../lib/dialog'
+import { useDialog, DialogIconTypes } from '../../../common/dialog'
 import { useDb } from '../../lib/db'
 
 const ListContainer = styled.div`

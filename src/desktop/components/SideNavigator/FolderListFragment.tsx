@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 import { useDb } from '../../lib/db'
-import { useDialog, DialogIconTypes } from '../../lib/dialog'
+import { useDialog, DialogIconTypes } from '../../../common/dialog'
 import { useContextMenu, MenuTypes } from '../../lib/contextMenu'
 import SideNavigatorItem from './SideNavigatorItem'
 import { NoteStorage } from '../../../common/db/types'

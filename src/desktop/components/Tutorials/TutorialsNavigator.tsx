@@ -4,7 +4,7 @@ import SideNavigatorItem from '../SideNavigator/SideNavigatorItem'
 import { useRouter, useCurrentTutorialPathname } from '../../lib/router'
 import { useGeneralStatus } from '../../lib/generalStatus'
 import { useContextMenu, MenuTypes } from '../../lib/contextMenu'
-import { useDialog, DialogIconTypes } from '../../lib/dialog'
+import { useDialog, DialogIconTypes } from '../../../common/dialog'
 import { usePreferences } from '../../lib/preferences'
 import { IconFile, IconFileOpen, IconHelpOutline } from '../../../common/icons'
 

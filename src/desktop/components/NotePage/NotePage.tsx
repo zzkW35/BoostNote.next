@@ -20,7 +20,7 @@ import {
   ObjectMap
 } from '../../../common/db/types'
 import { useGeneralStatus, ViewModeType } from '../../lib/generalStatus'
-import { useDialog, DialogIconTypes } from '../../lib/dialog'
+import { useDialog, DialogIconTypes } from '../../../common/dialog'
 import { escapeRegExp } from '../../../common/string'
 import { useTranslation } from 'react-i18next'
 import { useGlobalKeyDownHandler, isWithGeneralCtrlKey } from '../../lib/event'
